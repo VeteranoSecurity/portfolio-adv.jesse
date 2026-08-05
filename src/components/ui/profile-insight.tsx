@@ -1,5 +1,5 @@
 import { ArrowUpRight, MessageCircle, Mail, ShieldCheck, Scale, Award, MapPin, Share2, Video } from 'lucide-react';
-import foto2 from '@/assets/Foto 2.png';
+import foto1 from '@/assets/Foto 1.png';
 
 export default function ProfileInsight() {
   return (
@@ -48,7 +48,7 @@ export default function ProfileInsight() {
                   <span>ESPECIALIZAÇÃO & ABORDAGEM INTERDISCIPLINAR</span>
                 </div>
                 <p className="text-sm text-neutral-300 leading-relaxed font-sans">
-                  Especialista em Direito Penal e pós-graduando em Psicologia Forense, com abordagem interdisciplinar voltada à aplicação prática do conhecimento jurídico e psicológico na defesa dos direitos individuais.
+                  Especialista em Direito Penal e Pós-graduado em Psicologia Forense, com abordagem interdisciplinar voltada à aplicação prática do conhecimento jurídico e psicológico na defesa dos direitos individuais.
                 </p>
               </div>
 
@@ -86,11 +86,11 @@ export default function ProfileInsight() {
 
               {/* Avatar Section */}
               <div className="flex flex-col items-center text-center relative z-10 mb-8">
-                <div className="relative w-36 h-36 rounded-full overflow-hidden p-1 bg-gradient-to-tr from-amber-500 via-amber-600 to-yellow-400 shadow-2xl mb-6">
+                <div className="relative w-40 h-40 rounded-full overflow-hidden p-1 bg-gradient-to-tr from-amber-800 via-amber-600 to-yellow-400 shadow-2xl mb-6">
                   <img
-                    src={foto2}
+                    src={foto1}
                     alt="Jesse Marques"
-                    className="w-full h-full object-cover rounded-full grayscale hover:grayscale-0 transition-all duration-500"
+                    className="w-full h-full object-cover rounded-full transition-transform duration-500 hover:scale-105"
                   />
                 </div>
 

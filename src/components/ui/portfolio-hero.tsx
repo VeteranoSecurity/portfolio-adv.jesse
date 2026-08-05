@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useMemo } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { FloatingPathsBackground } from "@/components/ui/floating-paths";
-import foto1 from "@/assets/Foto 1.png";
+import foto2 from "@/assets/Foto 2.png";
 import headerTitle from "@/assets/Header-title.png";
 
 // Inline Button component
@@ -232,9 +232,9 @@ export default function PortfolioHero() {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
               <div className="w-[80px] h-[125px] sm:w-[110px] sm:h-[175px] md:w-[130px] md:h-[210px] lg:w-[150px] lg:h-[240px] rounded-full overflow-hidden shadow-[0_0_50px_rgba(212,175,55,0.3)] border-2 border-amber-500/40 transition-transform duration-300 hover:scale-105 cursor-pointer bg-slate-900">
                 <img
-                  src={foto1}
+                  src={foto2}
                   alt="Dr. Jesse Marques - Advogado Criminalista"
-                  className="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-500"
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
               </div>
             </div>
