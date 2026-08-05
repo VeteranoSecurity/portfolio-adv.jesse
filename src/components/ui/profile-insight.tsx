@@ -123,7 +123,7 @@ export default function ProfileInsight() {
                       <div className="text-sm font-bold text-white group-hover:text-amber-400 transition-colors">
                         WhatsApp Urgente
                       </div>
-                      <div className="text-xs text-neutral-400">+55 (61) 98257-3590</div>
+                      <div className="text-xs text-neutral-400">+55 (61) 98420-3515</div>
                     </div>
                   </div>
                   <ArrowUpRight className="w-4 h-4 text-neutral-500 group-hover:text-amber-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
