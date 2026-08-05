@@ -6,7 +6,7 @@ export default function ProfileInsight() {
     <section id="insight" className="py-24 px-4 sm:px-6 lg:px-8 bg-black text-white relative">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          
+
           {/* Left Column: Bio & Core Competencies */}
           <div className="lg:col-span-7 space-y-8">
             {/* Pill Badge */}
@@ -67,7 +67,7 @@ export default function ProfileInsight() {
             {/* Bottom CTA Pill Button */}
             <div className="pt-4">
               <a
-                href="https://wa.me/5561982573590?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20confidencial."
+                href="https://wa.me/5561984203515?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20confidencial."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-between px-8 py-4 rounded-full bg-white text-black font-bold text-sm tracking-wider uppercase hover:bg-amber-400 transition-all duration-300 shadow-xl cursor-pointer group"
@@ -93,7 +93,7 @@ export default function ProfileInsight() {
                     className="w-full h-full object-cover rounded-full grayscale hover:grayscale-0 transition-all duration-500"
                   />
                 </div>
-                
+
                 <h3 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
                   Jesse Marques
                 </h3>
