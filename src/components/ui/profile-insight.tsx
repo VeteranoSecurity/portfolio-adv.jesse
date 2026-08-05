@@ -90,7 +90,7 @@ export default function ProfileInsight() {
                   <img
                     src={foto1}
                     alt="Jesse Marques"
-                    className="w-full h-full object-cover rounded-full transition-transform duration-500 hover:scale-105"
+                    className="w-full h-full object-cover rounded-full scale-[1.35] origin-center transition-transform duration-500 hover:scale-[1.45]"
                   />
                 </div>
 
