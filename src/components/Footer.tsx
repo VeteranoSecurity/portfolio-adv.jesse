@@ -1,5 +1,42 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Scale, ShieldCheck, Lock, ArrowUp } from 'lucide-react';
+
+const TypewriterText: React.FC = () => {
+  const fullText = "Desenvolvido por TrilhaRede";
+  const [displayedText, setDisplayedText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    let timer: ReturnType<typeof setTimeout>;
+
+    if (!isDeleting && displayedText.length < fullText.length) {
+      timer = setTimeout(() => {
+        setDisplayedText(fullText.slice(0, displayedText.length + 1));
+      }, 100);
+    } else if (!isDeleting && displayedText.length === fullText.length) {
+      timer = setTimeout(() => {
+        setIsDeleting(true);
+      }, 2200);
+    } else if (isDeleting && displayedText.length > 0) {
+      timer = setTimeout(() => {
+        setDisplayedText(fullText.slice(0, displayedText.length - 1));
+      }, 50);
+    } else if (isDeleting && displayedText.length === 0) {
+      timer = setTimeout(() => {
+        setIsDeleting(false);
+      }, 500);
+    }
+
+    return () => clearTimeout(timer);
+  }, [displayedText, isDeleting, fullText]);
+
+  return (
+    <span className="font-mono text-xs font-semibold text-amber-400 group-hover:text-amber-300 inline-flex items-center tracking-wide transition-colors">
+      <span>{displayedText}</span>
+      <span className="w-1.5 h-3.5 bg-amber-400 group-hover:bg-amber-300 ml-1 animate-pulse inline-block rounded-sm transition-colors" />
+    </span>
+  );
+};
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -87,10 +124,22 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-neutral-900 flex flex-col sm:flex-row items-center justify-between text-xs text-neutral-500 gap-4">
+        <div className="pt-8 border-t border-neutral-900 flex flex-col md:flex-row items-center justify-between text-xs text-neutral-500 gap-4">
           <div>
             © {new Date().getFullYear()} Jesse Marques Advocacia Criminal. Todos os direitos reservados.
           </div>
+          
+          {/* Clickable Animated Typewriter Credits -> WhatsApp TrilhaRede */}
+          <a
+            href="https://wa.me/5561982573590?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20um%20site"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="py-1.5 px-4 rounded-full bg-neutral-950 border border-amber-500/30 hover:border-amber-400 hover:bg-neutral-900 flex items-center justify-center shadow-md transition-all duration-300 group cursor-pointer"
+            title="Solicitar orçamento com a TrilhaRede via WhatsApp"
+          >
+            <TypewriterText />
+          </a>
+
           <div className="flex items-center gap-6 text-[11px]">
             <a href="#insight" onClick={(e) => handleSectionScroll(e, 'insight')} className="hover:text-neutral-400">Política de Privacidade</a>
             <span>•</span>
