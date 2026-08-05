@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="#090D16"/>
+  <rect x="2" y="2" width="60" height="60" rx="14" stroke="#D4AF37" stroke-width="2" stroke-opacity="0.4"/>
+  <!-- Scale Icon -->
+  <path d="M32 14V46M32 14L18 24M32 14L46 24M18 24L14 36H22L18 24ZM46 24L42 36H50L46 24ZM22 48H42" stroke="#D4AF37" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
